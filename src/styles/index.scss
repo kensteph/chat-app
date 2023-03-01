@@ -174,7 +174,7 @@
     }
 
     .rightSection {
-      background-color: blueviolet;
+      background-color: rgb(228, 224, 232);
       flex: 2;
 
       .rightHeaderContainer {
@@ -219,6 +219,10 @@
             cursor: pointer;
           }
         }
+      }
+      .MessageListContainer {
+        height: calc(100% - 7.5rem);
+        padding: 1rem;
       }
     }
   }
