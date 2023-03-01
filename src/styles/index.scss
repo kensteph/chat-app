@@ -147,6 +147,30 @@
           background: transparent;
         }
       }
+      .chatContainer {
+        padding: 1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(21, 105, 21);
+        }
+
+        .chatInfo {
+          display: flex;
+          gap: 1rem;
+          .userInfo {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            .user {
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
+            .lastMessage {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
     }
 
     .rightSection {
