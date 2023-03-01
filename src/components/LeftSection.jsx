@@ -1,7 +1,10 @@
 import React from 'react';
+import LeftHeader from './LeftHeader';
 
 const LeftSection = () => (
-  <div className="leftSection">LeftSection</div>
+  <div className="leftSection">
+    <LeftHeader />
+  </div>
 );
 
 export default LeftSection;
