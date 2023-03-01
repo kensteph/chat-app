@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LeftSection = () => (
-  <div>LeftSection</div>
+  <div className="leftSection">LeftSection</div>
 );
 
 export default LeftSection;

@@ -68,3 +68,30 @@
 }
 
 // Home Page
+.homeContainer {
+  background-color: powderblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  .wrapper {
+    width: 65%;
+    height: 80%;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .leftSection {
+      background-color: orange;
+      flex: 1;
+    }
+
+    .rightSection {
+      background-color: blueviolet;
+      flex: 2;
+    }
+  }
+}
