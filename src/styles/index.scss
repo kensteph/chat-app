@@ -99,7 +99,7 @@
     overflow: hidden;
 
     .leftSection {
-      background-color: rgb(16, 83, 16);
+      background-color: rgb(78, 141, 78);
       flex: 1;
 
       .header {
@@ -133,6 +133,18 @@
             background-color: powderblue;
             cursor: pointer;
           }
+        }
+      }
+      .searchContainer {
+        background-color: rgb(240, 242, 242);
+        padding: 0.5rem;
+
+        input {
+          padding: 0.5rem;
+          width: 100%;
+          border: none;
+          outline: none;
+          background: transparent;
         }
       }
     }
