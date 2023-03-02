@@ -5,6 +5,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
 .avatar-sm {
   width: 30px;
   height: 30px;
@@ -49,6 +50,7 @@
       input {
         width: 250px;
         padding: 0.5rem;
+
         &::placeholder {
           color: rgb(186, 184, 184);
         }
@@ -113,6 +115,7 @@
           font-weight: bold;
           color: white;
         }
+
         .userInfo {
           display: flex;
           align-items: center;
@@ -127,6 +130,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
           }
+
           button {
             padding: 0.2rem;
             border: none;
@@ -135,6 +139,7 @@
           }
         }
       }
+
       .searchContainer {
         background-color: rgb(240, 242, 242);
         padding: 0.5rem;
@@ -147,9 +152,11 @@
           background: transparent;
         }
       }
+
       .chatContainer {
         padding: 1rem;
         cursor: pointer;
+
         &:hover {
           background-color: rgb(21, 105, 21);
         }
@@ -157,14 +164,17 @@
         .chatInfo {
           display: flex;
           gap: 1rem;
+
           .userInfo {
             display: flex;
             flex-direction: column;
             color: white;
+
             .user {
               font-size: 1.2rem;
               font-weight: bold;
             }
+
             .lastMessage {
               font-size: 0.8rem;
             }
@@ -191,6 +201,7 @@
           cursor: pointer;
         }
       }
+
       .inputMessageContainer {
         display: flex;
         background-color: rgb(237, 242, 242);
@@ -220,6 +231,7 @@
           }
         }
       }
+
       .MessageListContainer {
         height: calc(100% - 9.6rem);
         padding: 1rem;
@@ -239,13 +251,16 @@
           .message {
             display: flex;
             gap: 1rem;
+
             .user {
               display: flex;
               flex-direction: column;
+
               .hour {
                 font-size: 0.6rem;
               }
             }
+
             .messageContent {
               display: flex;
               padding: 0.2rem;
