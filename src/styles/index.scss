@@ -1,3 +1,19 @@
+// Global
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-sm {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+// Register & Login
 .formContainer {
   display: flex;
   height: 100vh;
@@ -9,7 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 5rem;
     background-color: white;
     border-radius: 1rem;
     gap: 1rem;
@@ -27,11 +43,17 @@
 
     form {
       display: flex;
+      flex: 1;
       flex-direction: column;
       gap: 1rem;
 
       input {
+        width: 250px;
         padding: 0.5rem;
+
+        &::placeholder {
+          color: rgb(186, 184, 184);
+        }
       }
 
       label {
@@ -57,6 +79,203 @@
 
     p {
       font-size: 0.7rem;
+    }
+  }
+}
+
+// Home Page
+.homeContainer {
+  background-color: powderblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  .wrapper {
+    width: 65%;
+    height: 80%;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    .leftSection {
+      background-color: rgb(78, 141, 78);
+      flex: 1;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+
+        .logo {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: white;
+        }
+
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          .user {
+            width: 6rem;
+            font-size: 0.8rem;
+            color: white;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          button {
+            padding: 0.2rem;
+            border: none;
+            background-color: powderblue;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .searchContainer {
+        background-color: rgb(240, 242, 242);
+        padding: 0.5rem;
+
+        input {
+          padding: 0.5rem;
+          width: 100%;
+          border: none;
+          outline: none;
+          background: transparent;
+        }
+      }
+
+      .chatContainer {
+        padding: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(21, 105, 21);
+        }
+
+        .chatInfo {
+          display: flex;
+          gap: 1rem;
+
+          .userInfo {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            .user {
+              font-size: 1.2rem;
+              font-weight: bold;
+            }
+
+            .lastMessage {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    .rightSection {
+      background-color: rgb(228, 224, 232);
+      flex: 2;
+
+      .rightHeaderContainer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        height: 1.8rem;
+        background-color: azure;
+
+        .icons {
+          display: flex;
+          gap: 1rem;
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+      }
+
+      .inputMessageContainer {
+        display: flex;
+        background-color: rgb(237, 242, 242);
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+
+        input {
+          width: 100%;
+          padding: 0.5rem;
+          outline: none;
+          border: none;
+          background: transparent;
+        }
+
+        .actions {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          button {
+            padding: 0.8rem;
+            margin-right: 0.5rem;
+            background-color: powderblue;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .MessageListContainer {
+        height: calc(100% - 9.6rem);
+        padding: 1rem;
+        overflow-y: scroll;
+
+        .messageContainer {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          gap: 0.5rem;
+          margin-bottom: 0.9rem;
+
+          &.owner {
+            flex-direction: row;
+          }
+
+          .message {
+            display: flex;
+            gap: 1rem;
+
+            .user {
+              display: flex;
+              flex-direction: column;
+
+              .hour {
+                font-size: 0.6rem;
+              }
+            }
+
+            .messageContent {
+              display: flex;
+              padding: 0.2rem;
+              align-items: center;
+              background-color: rgb(65, 150, 219);
+              border-radius: 0 0.5rem;
+
+              &.owner {
+                background-color: white;
+                border-radius: 0.5rem 0;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
