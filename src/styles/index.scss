@@ -221,8 +221,45 @@
         }
       }
       .MessageListContainer {
-        height: calc(100% - 7.5rem);
+        height: calc(100% - 9.6rem);
         padding: 1rem;
+        overflow-y: scroll;
+
+        .messageContainer {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          gap: 0.5rem;
+          margin-bottom: 0.9rem;
+
+          &.owner {
+            flex-direction: row;
+          }
+
+          .message {
+            display: flex;
+            gap: 1rem;
+            .user {
+              display: flex;
+              flex-direction: column;
+              .hour {
+                font-size: 0.6rem;
+              }
+            }
+            .messageContent {
+              display: flex;
+              padding: 0.2rem;
+              align-items: center;
+              background-color: rgb(65, 150, 219);
+              border-radius: 0 0.5rem;
+
+              &.owner {
+                background-color: white;
+                border-radius: 0.5rem 0;
+              }
+            }
+          }
+        }
       }
     }
   }

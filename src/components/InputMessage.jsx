@@ -3,7 +3,7 @@ import { PictureOutlined, LinkOutlined } from '@ant-design/icons';
 
 const InputMessage = () => (
   <div className="inputMessageContainer">
-    <input type="text" placeholder="Type somothing..." />
+    <input type="text" placeholder="Type something..." />
     <div className="actions">
       <label htmlFor="doc">
         <LinkOutlined style={{ fontSize: '25px', cursor: 'pointer' }} />

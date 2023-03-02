@@ -1,19 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Message = () => (
-  <div className="messageContainer">
+const Message = ({ owner }) => (
+  <div className={`messageContainer ${owner}`}>
     <div className="message">
-      <img
-        className="avatar-sm"
-        src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1600"
-        alt="User avatar"
-      />
-      <div className="messageContent">
-        <span className="user">Stephanie S. Romain</span>
-        <span className="lastMessage">I miss you</span>
+      <div className="user">
+        <img
+          className="avatar-sm"
+          src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&w=1600"
+          alt="User avatar"
+        />
+        <span className="hour">Just now</span>
+      </div>
+
+      <div className={`messageContent ${owner}`}>
+        <span>I miss you miss you miss you miss you miss you miss you</span>
       </div>
     </div>
   </div>
 );
+
+Message.propTypes = { owner: PropTypes.string.isRequired };
 
 export default Message;
